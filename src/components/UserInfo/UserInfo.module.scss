@@ -1,0 +1,30 @@
+.ProfDescr {
+  font-size: 18px;
+  display: flex;
+  max-width: 600px;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  span {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .UserImg {
+    max-height: 100px;
+  }
+  .ProfDescrItem {
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 600px) {
+      width: 100%;
+      font-size: 15px;
+      overflow: hidden;
+    }
+  }
+  .ProfDescrText {
+    padding: 6px;
+  }
+}

@@ -1,0 +1,53 @@
+@import '../../sass/variables';
+
+#footer {
+  background: #d7e1ec;
+  color: #000428;
+  height: $footer-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .course-logo {
+    width: 80px;
+    height: 40px;
+    font-size: 0;
+    display: block;
+    margin: auto;
+    background: url('../../assets/svg/rs_school_js.svg') center / contain no-repeat;
+  }
+}
+
+.footer-card-container {
+  display: flex;
+  width: 640px;
+  @media (max-width: 700px) {
+    width: 400px;
+  }
+  @media (max-width: 480px) {
+    width: 275px;
+  }
+  justify-content: space-evenly;
+  align-items: center;
+  .fa-github {
+    padding-left: 4px;
+    color: #000428;
+  }
+  a {
+    text-decoration: none;
+    color: #000428;
+  }
+  .footer-card-item {
+    padding: 4px;
+    font-size: 16px;
+    padding: 2px;
+    width: 33%;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000428;
+    @media (max-width: 700px) {
+      font-size: 14px;
+    }
+  }
+}

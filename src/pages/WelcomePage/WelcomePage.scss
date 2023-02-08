@@ -1,0 +1,309 @@
+.main-nav-btn {
+  transition: all 0.3s ease-out;
+  box-shadow: 0 0 20px rgb(0 0 0 / 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000428;
+  &:visited,
+  &:hover,
+  &:active {
+    color: #000428;
+  }
+  &:hover {
+    filter: brightness(1.2);
+  }
+  i {
+    margin: 5px;
+  }
+  width: 145px;
+  height: 34px;
+  padding: 5px;
+  border: 0;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  margin-top: 12px;
+  border-radius: 5px;
+}
+
+.main-nav-btn-dark {
+  color: #fff;
+  background: none;
+  &:visited,
+  &:hover,
+  &:active {
+    color: #fff;
+    background: none;
+  }
+  box-shadow: none;
+}
+
+.welc-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.buttons-head-top {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.front-sec-one {
+  background-color: #f5f7fa;
+  /* background: linear-gradient(345deg, #026a8d, rgba(28, 5, 169, 0.3) 60%), #000; */
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, #ffffff 0%, #d7e1ec 74%);
+  .front-content-wrapper {
+    height: 860px;
+    justify-content: space-evenly;
+    @media (max-width: 800px) {
+      height: 760px;
+    }
+  }
+}
+
+.main-title-heading {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.sec-one-left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  flex-direction: column;
+  color: #000428;
+
+  .main-nav-btn {
+    color: #fff;
+    &:visited,
+    &:hover,
+    &:active {
+      color: #fff;
+    }
+    background-color: #000428;
+    background-image: linear-gradient(315deg, #000428 0%, #000 74%);
+  }
+
+  .main-nav-btn-dark {
+    color: #000428;
+    background: none;
+    &:visited,
+    &:hover,
+    &:active {
+      color: #000428;
+      filter: brightness(1.1);
+    }
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    height: 70%;
+    .main-title-heading {
+      font-size: 26px;
+    }
+
+    .front-content-paragraph {
+      font-size: 16px;
+    }
+  }
+}
+
+.sec-one-right {
+  background: url('../../assets/img/kanban3.svg') center / contain no-repeat;
+  width: 60%;
+  padding: 15px;
+  @media (max-width: 800px) {
+    height: 30%;
+    width: 100%;
+    order: -1;
+    background: url('../../assets/img/kanban3.svg') center / contain no-repeat;
+  }
+}
+
+.front-sec-two {
+  background: #fff;
+  color: #000428;
+  .front-content-wrapper {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .advantages-descr {
+    padding: 10px;
+    height: 400px;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      width: 100%;
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0;
+      @media (max-width: 800px) {
+        font-size: 22px;
+      }
+    }
+    p {
+      width: 100%;
+      font-size: 20px;
+      color: #666;
+      @media (max-width: 800px) {
+        font-size: 18px;
+      }
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+      height: 200px;
+    }
+  }
+  .reorder-desc {
+    @media (max-width: 800px) {
+      order: -1;
+    }
+  }
+  .advantages-video {
+    padding: 10px;
+    height: 540px;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+      height: 320px;
+    }
+    @media (max-width: 400px) {
+      width: 100%;
+      height: 220px;
+    }
+  }
+}
+
+.front-sec-three {
+  /*  background: linear-gradient(350deg, #026a8d, rgba(28, 5, 169, 0.3) 60%), #000; */
+  background: #fff url('../../assets/img/kanban.svg') center / contain no-repeat;
+  height: 600px;
+  @media (max-width: 800px) {
+    height: 300px;
+  }
+}
+
+.front-sec-four {
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #ffffff 0%, #d7e1ec 74%);
+  color: #000428;
+  .front-content-wrapper {
+    display: block;
+    h2 {
+      font-size: 32px;
+    }
+  }
+  .team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 15px;
+
+    .pers-card-wrapper {
+      flex-direction: column;
+      background-color: #000428;
+      background-image: linear-gradient(135deg, #0277bd 0%, #000428 74%);
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgb(0 0 0 / 70%);
+      width: 290px;
+      padding: 5px;
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      height: 460px;
+      li {
+        line-height: 1.4em;
+      }
+      .pers-card-name {
+        text-transform: uppercase;
+      }
+      .pers-card-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      .pers-card-details {
+        width: 100%;
+      }
+      .pers-card-link {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+      }
+      .pers-card-done {
+        @media (max-width: 500px) {
+          font-size: 14px;
+        }
+        text-align: left;
+        ul {
+          padding-left: 25px;
+          @media (max-width: 500px) {
+            padding-left: 20px;
+          }
+        }
+      }
+      .pers-photo-1 {
+        background: #fff url('../../assets/img/av1.png') center/cover no-repeat;
+      }
+      .pers-photo-2 {
+        background: #fff url('../../assets/img/av2.jfif') center/cover no-repeat;
+      }
+    }
+  }
+}
+
+.front-content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.front-content-paragraph {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.front-sec-title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.video-el {
+  width: 100%;
+  box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+  display: block;
+  margin: auto;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.front-icon-large {
+  font-size: 50px;
+  margin-left: 10px;
+  margin-right: auto;
+}
