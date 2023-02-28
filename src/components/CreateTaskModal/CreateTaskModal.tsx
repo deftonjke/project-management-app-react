@@ -2,7 +2,7 @@ import { createRef, useContext, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import createTask from '../../api/createTask';
 import { AppContext } from '../../App';
-import { FORM_INVALID_MESSAGE, titleRegex } from '../../data/constants';
+import { titleRegex } from '../../data/constants';
 import dict from '../../data/dict';
 import './CreateTaskModal.scss';
 
