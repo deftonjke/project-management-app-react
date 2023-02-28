@@ -1,6 +1,6 @@
 import { Languages } from './interfaces';
 
-export const API_URL = 'https://kanban-rest-jfch.onrender.com';
+export const API_URL = 'https://resteu.onrender.com';
 
 export const LANG_RU: Languages = 'RU';
 export const LANG_EN: Languages = 'EN';
