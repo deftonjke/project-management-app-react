@@ -1,0 +1,39 @@
+@import '../../sass/variables.scss';
+
+.list,
+.list__task {
+  transition: background 0.5s;
+}
+
+.list__task {
+  user-select: none;
+}
+
+.list-dragging {
+  background-color: rgb(222, 235, 255);
+}
+
+.task-dragging {
+  background-color: rgb(222, 235, 255);
+}
+
+.list-dragged-on {
+  background-color: rgb(208, 217, 231);
+}
+
+.list__badge {
+  position: absolute;
+  top: -12px;
+  left: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+
+  color: #ffffff;
+  background-color: #1976d2;
+  border-radius: 50%;
+  box-shadow: 0 0 1px white;
+}

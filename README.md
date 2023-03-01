@@ -9,20 +9,23 @@
 
 ## Deploy
 
-https://
+https://kanban-management.vercel.app/
 
 ## Downloading
 
-`git clone https://github.com/tlkv/project-management-app`
+`git clone https://github.com/deftonjke/project-management-app-react.git`
 
 ## Client
 
 ```
 cd project-management-app
-
+```
+```
 git checkout develop
-
+```
+```
 npm install
-
+```
+```
 npm start
 ```

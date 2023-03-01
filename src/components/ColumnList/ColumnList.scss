@@ -1,0 +1,160 @@
+$list-color: rgba(220, 229, 233);
+$list-text-color: #282c34;
+
+.list-wrapper {
+  display: inline-block;
+  width: 272px;
+  margin: 0 4px;
+
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.list {
+  position: relative;
+  background-color: $list-color;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.list__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  min-height: 50px;
+
+  .list__title {
+    display: -webkit-box;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+
+    color: $list-text-color;
+    font-size: 16px;
+    font-weight: 500;
+    user-select: none;
+    white-space: break-spaces;
+    word-break: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+  }
+
+  .list__title-input {
+    width: 100%;
+    margin-left: 4px;
+    padding: 4px 6px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    outline-color: #026aa7;
+  }
+}
+
+.list__btn {
+  padding: 2px 6px;
+  background-color: transparent;
+  border: none;
+
+  &.accept {
+    color: green;
+  }
+
+  &.delete {
+    align-self: baseline;
+    color: #d32f2f;
+  }
+  &.light-gr {
+    color: gray;
+    font-size: 14px;
+  }
+}
+
+.list__tasks {
+  margin-left: 6px;
+  overflow-y: auto;
+  max-height: calc(100vh - 400px);
+  height: 100%;
+  min-height: 4px;
+}
+
+.dnd-wrapper {
+  margin: 15px;
+  height: calc(100vh - 300px);
+}
+
+.list__task {
+  position: relative;
+  display: -webkit-box;
+  overflow: hidden;
+  margin-bottom: 5px;
+  margin-right: 6px;
+  padding: 6px 28px 8px 8px;
+
+  color: $list-text-color;
+  box-shadow: 0 1px 1px rgba(9, 30, 66, 0.4);
+  background-color: #fff;
+  border-radius: 2px;
+  white-space: break-spaces;
+  word-break: break-all;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+
+  .list__btn {
+    position: absolute;
+    right: -4px;
+    top: 4px;
+  }
+}
+
+.add-task-container {
+  padding: 4px 8px 8px;
+
+  .add-task {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    user-select: none;
+
+    font-weight: 100;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+      background-color: rgba(189, 191, 194, 0.6);
+    }
+  }
+}
+
+.board__add-list {
+  width: 100%;
+  height: 2.8rem;
+  padding: 5px 10px;
+
+  border-radius: 4px;
+  border: 1px solid darkgrey;
+
+  &:focus {
+    outline-color: #026aa7;
+  }
+}
+
+.board__add-list-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  color: white;
+  background-color: rgba(173, 185, 189, 0.8);
+  transition: background-color 100ms linear;
+
+  &:hover {
+    background-color: rgba(173, 185, 189, 0.9);
+  }
+}
