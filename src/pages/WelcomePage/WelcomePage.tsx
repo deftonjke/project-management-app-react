@@ -81,66 +81,6 @@ function WelcomePage() {
           </div>
         </div>
       </section>
-
-      <section className="front-sec-three">
-        <div className="front-content-wrapper"></div>
-      </section>
-      <section className="front-sec-four">
-        <div className="front-content-wrapper">
-          <h2 className="front-sec-title">{dict[lang].welcomePage.teamTitle}</h2>
-          <div className="team-wrapper">
-            <div className="pers-card-wrapper">
-              <h3 className="pers-card-name">
-                {dict[lang].welcomePage.teamName1}
-                <a
-                  href="https://github.com/tlkv"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="pers-card-link"
-                >
-                  <i className="fa-brands fa-github" />
-                </a>
-              </h3>
-              <div className="pers-card-photo pers-photo-1"></div>
-              <div className="pers-card-details">
-                <div className="pers-card-done">
-                  <ul>
-                    <li>{dict[lang].welcomePage.team1done1}</li>
-                    <li>{dict[lang].welcomePage.team1done2}</li>
-                    <li>{dict[lang].welcomePage.team1done3}</li>
-                    <li>{dict[lang].welcomePage.team1done4}</li>
-                    <li>{dict[lang].welcomePage.team1done5}</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="pers-card-wrapper">
-              <h3 className="pers-card-name">
-                {dict[lang].welcomePage.teamName2}
-                <a
-                  href="https://github.com/deftonjke"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="pers-card-link"
-                >
-                  <i className="fa-brands fa-github" />
-                </a>
-              </h3>
-              <div className="pers-card-photo pers-photo-2"></div>
-              <div className="pers-card-details">
-                <div className="pers-card-done">
-                  <ul>
-                    <li>{dict[lang].welcomePage.team2done1}</li>
-                    <li>{dict[lang].welcomePage.team2done2}</li>
-                    <li>{dict[lang].welcomePage.team2done3}</li>
-                    <li>{dict[lang].welcomePage.team2done4}</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
