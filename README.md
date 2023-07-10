@@ -20,12 +20,15 @@ https://kanban-management.vercel.app/
 ```
 cd project-management-app
 ```
+
 ```
 git checkout develop
 ```
+
 ```
-npm install
+npm install --legacy-peer-deps
 ```
+
 ```
 npm start
 ```
